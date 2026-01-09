@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<!-- This tells browser its HTML5 -->
+
+<html lang="en">
+<!-- Html tag with english -->
+
+<head>
+    <!-- Head section -->
+
+    <meta charset="UTF-8">
+    <!-- Characters to use -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- For mobile phones -->
+
+    <title>Holidae - Bali Package</title>
+    <!-- Tab title -->
+
+    <link rel="stylesheet" href="styles.css">
+    <!-- CSS file link -->
+
+</head>
+<!-- End head -->
+
+<body>
+    <!-- Visible content starts -->
+
+    <!-- Navigation -->
+    <nav>
+        <!-- Nav section -->
+
+        <h1>Holidae</h1>
+        <!-- Logo -->
+
+        <ul>
+            <!-- Menu list -->
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="destinations.html">Destinations</a>
+            </li>
+
+            <li>
+                <a href="bali.html">Bali Package</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+
+        </ul>
+
+    </nav>
+    <!-- End nav -->
+
+    <!-- Main image at top -->
+    <div class="big-image">
+        <!-- Container for big image -->
+
+        <img src="images/bali-big.jpg" alt="Bali rice fields">
+        <!-- Large image of Bali -->
+
+    </div>
+    <!-- End big image -->
+
+    <!-- Main content -->
+    <main>
+        <!-- Main section -->
+
+        <h2>Bali Paradise Holiday</h2>
+        <!-- Page title -->
+
+        <p class="big-price">Price: £599 per person</p>
+        <!-- Main price -->
+
+        <p>7 nights / 8 days</p>
+        <!-- Duration -->
+
+        <h3>About this holiday</h3>
+        <!-- Subheading -->
+
+        <p>Bali is a beautiful island in Indonesia. It has nice beaches, green rice fields and old temples. The people are very friendly and the food is good. This is our most popular holiday package.</p>
+        <!-- Description paragraph -->
+
+        <h3>What you get</h3>
+        <!-- Subheading -->
+
+        <ul class="list">
+            <!-- List of inclusions -->
+
+            <li>Return flights from London</li>
+            <!-- Item 1 -->
+
+            <li>7 nights in a 4 star hotel</li>
+            <!-- Item 2 -->
+
+            <li>Breakfast every day</li>
+            <!-- Item 3 -->
+
+            <li>Airport pickup and drop off</li>
+            <!-- Item 4 -->
+
+            <li>One temple tour included</li>
+            <!-- Item 5 -->
+
+            <li>Free wifi at hotel</li>
+            <!-- Item 6 -->
+
+        </ul>
+        <!-- End list -->
+
+        <h3>Photos</h3>
+        <!-- Photos heading -->
+
+        <div class="photos">
+            <!-- Container for photos -->
+
+            <img src="images/bali.jpg" alt="Bali beach">
+            <!-- First photo -->
+
+            <img src="images/bali-temple.jpg" alt="Bali temple">
+            <!-- Second photo -->
+
+            <img src="images/bali-rice.jpg" alt="Rice fields">
+            <!-- Third photo -->
+
+            <img src="images/bali-pool.jpg" alt="Hotel pool">
+            <!-- Fourth photo -->
+
+        </div>
+        <!-- End photos -->
+
+        <h3>Video about Bali</h3>
+        <!-- Video heading -->
+
+        <div class="video-box">
+            <!-- Video container -->
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CEDlCmroZsA" title="Bali video"></iframe>
+            <!-- Youtube video about Bali -->
+
+        </div>
+        <!-- End video -->
+
+        <h3>Sample Itinerary</h3>
+        <!-- Schedule heading -->
+
+        <div class="itinerary">
+            <!-- Itinerary container -->
+
+            <p><b>Day 1:</b> Arrive in Bali. Driver picks you up. Go to hotel and rest.</p>
+            <!-- Day 1 -->
+
+            <p><b>Day 2:</b> Visit the rice fields. See how rice is grown. Nice photos.</p>
+            <!-- Day 2 -->
+
+            <p><b>Day 3:</b> Temple tour day. Visit old temples. Learn about culture.</p>
+            <!-- Day 3 -->
+
+            <p><b>Day 4-5:</b> Free days. Relax at pool or beach. Maybe try surfing.</p>
+            <!-- Days 4-5 -->
+
+            <p><b>Day 6:</b> Go to different beach area. Shopping and food.</p>
+            <!-- Day 6 -->
+
+            <p><b>Day 7-8:</b> Last day enjoy. Then go to airport for flight home.</p>
+            <!-- Days 7-8 -->
+
+        </div>
+        <!-- End itinerary -->
+
+        <h3>Book this holiday</h3>
+        <!-- Booking heading -->
+
+        <div class="booking-box">
+            <!-- Booking form container -->
+
+            <form id="booking-form">
+                <!-- Form element -->
+
+                <label for="date">When do you want to go?</label>
+                <!-- Label for date input -->
+
+                <input type="date" id="date" name="date">
+                <!-- Date picker input -->
+
+                <br><br>
+                <!-- Line breaks for spacing -->
+
+                <label for="people">How many people?</label>
+                <!-- Label for people select -->
+
+                <select id="people" name="people">
+                    <!-- Dropdown select -->
+
+                    <option value="1">1 person</option>
+                    <!-- Option 1 -->
+
+                    <option value="2">2 people</option>
+                    <!-- Option 2 -->
+
+                    <option value="3">3 people</option>
+                    <!-- Option 3 -->
+
+                    <option value="4">4 people</option>
+                    <!-- Option 4 -->
+
+                </select>
+                <!-- End select -->
+
+                <br><br>
+                <!-- Spacing -->
+
+                <p id="total-price">Total: £599</p>
+                <!-- Price display that changes with javascript -->
+
+                <br>
+                <!-- Spacing -->
+
+                <button type="submit">Book Now</button>
+                <!-- Submit button -->
+
+            </form>
+            <!-- End form -->
+
+        </div>
+        <!-- End booking box -->
+
+        <h3>Customer Reviews</h3>
+        <!-- Reviews heading -->
+
+        <div class="reviews">
+            <!-- Reviews container -->
+
+            <div class="review">
+                <!-- First review -->
+
+                <p>"Bali was amazing! The hotel was so nice and clean. The temple tour was very interesting. I want to go back!"</p>
+                <!-- Review text -->
+
+                <p><b>- Sarah M, February 2024</b></p>
+                <!-- Reviewer name -->
+
+            </div>
+            <!-- End first review -->
+
+            <div class="review">
+                <!-- Second review -->
+
+                <p>"Me and my wife had the best holiday ever. The rice fields were beautiful. Food was delicious. Thank you Holidae!"</p>
+                <!-- Review text -->
+
+                <p><b>- John T, March 2024</b></p>
+                <!-- Reviewer name -->
+
+            </div>
+            <!-- End second review -->
+
+        </div>
+        <!-- End reviews -->
+
+    </main>
+    <!-- End main -->
+
+    <!-- Footer -->
+    <footer>
+        <!-- Footer section -->
+
+        <p>Contact us: info@holidae.com</p>
+        <!-- Email -->
+
+        <p>Phone: 0123 456 7890</p>
+        <!-- Phone -->
+
+        <p>© 2024 Holidae</p>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- End footer -->
+
+    <script src="script.js"></script>
+    <!-- JavaScript file -->
+
+</body>
+<!-- End body -->
+
+</html>
+<!-- End document -->

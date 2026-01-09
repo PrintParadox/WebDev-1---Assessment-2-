@@ -1,0 +1,583 @@
+/* 
+   CSS Stylesheet for Holidae Website
+   This file makes the website look nice
+*/
+
+/* Basic reset - removes default spacing */
+* {
+    margin: 0;
+    /* removes default margin */
+    padding: 0;
+    /* removes default padding */
+}
+
+/* Body styles - affects whole page */
+body {
+    font-family: Arial, sans-serif;
+    /* sets the font to Arial */
+    font-size: 16px;
+    /* sets text size */
+    line-height: 1.5;
+    /* space between lines */
+    background-color: #f5f5f5;
+    /* light grey background */
+}
+
+/* Navigation bar styles */
+nav {
+    background-color: #2196F3;
+    /* blue background */
+    padding: 10px;
+    /* space inside nav */
+    text-align: center;
+    /* center the text */
+}
+
+/* Navigation heading (logo) */
+nav h1 {
+    color: white;
+    /* white text */
+    margin-bottom: 10px;
+    /* space below */
+}
+
+/* Navigation list */
+nav ul {
+    list-style: none;
+    /* removes bullet points */
+}
+
+/* Navigation list items */
+nav li {
+    display: inline;
+    /* puts items in a row */
+    margin: 0 10px;
+    /* space on sides */
+}
+
+/* Navigation links */
+nav a {
+    color: white;
+    /* white text */
+    text-decoration: none;
+    /* removes underline */
+    padding: 5px 10px;
+    /* space around text */
+}
+
+/* Navigation link hover effect */
+nav a:hover {
+    background-color: #1976D2;
+    /* darker blue when mouse over */
+}
+
+/* Banner section on home page */
+.banner {
+    text-align: center;
+    /* center everything */
+    background-color: #e3f2fd;
+    /* light blue background */
+    padding: 20px;
+    /* space inside */
+}
+
+/* Banner image */
+.banner img {
+    width: 100%;
+    /* full width */
+    max-width: 800px;
+    /* but not bigger than 800px */
+    height: auto;
+    /* keep proportions */
+}
+
+/* Banner heading */
+.banner h2 {
+    color: #1565C0;
+    /* dark blue */
+    margin-top: 15px;
+    /* space above */
+}
+
+/* Page header for other pages */
+.page-header {
+    background-color: #2196F3;
+    /* blue background */
+    color: white;
+    /* white text */
+    text-align: center;
+    /* centered */
+    padding: 30px;
+    /* space inside */
+}
+
+/* Big image container */
+.big-image {
+    text-align: center;
+    /* center image */
+}
+
+/* Big image style */
+.big-image img {
+    width: 100%;
+    /* full width */
+    max-width: 1000px;
+    /* maximum size */
+    height: auto;
+    /* keep shape */
+}
+
+/* Main content area */
+main {
+    max-width: 1000px;
+    /* not too wide */
+    margin: 20px auto;
+    /* centered with space */
+    padding: 20px;
+    /* space inside */
+    background-color: white;
+    /* white background */
+}
+
+/* Main headings in content */
+main h2 {
+    color: #1565C0;
+    /* dark blue */
+    border-bottom: 2px solid #2196F3;
+    /* blue line under */
+    padding-bottom: 10px;
+    /* space before line */
+    margin-top: 20px;
+    /* space above */
+    margin-bottom: 15px;
+    /* space below */
+}
+
+/* Subheadings */
+main h3 {
+    color: #1976D2;
+    /* medium blue */
+    margin-top: 20px;
+    /* space above */
+    margin-bottom: 10px;
+    /* space below */
+}
+
+/* Features container */
+.features {
+    display: flex;
+    /* puts boxes in row */
+    flex-wrap: wrap;
+    /* wraps to next line if needed */
+    gap: 20px;
+    /* space between boxes */
+    justify-content: center;
+    /* centers the boxes */
+}
+
+/* Individual feature box */
+.feature-box {
+    background-color: #e3f2fd;
+    /* light blue */
+    padding: 20px;
+    /* space inside */
+    width: 250px;
+    /* box width */
+    text-align: center;
+    /* center text */
+    border: 1px solid #90caf9;
+    /* light blue border */
+}
+
+/* Feature box heading */
+.feature-box h3 {
+    color: #1565C0;
+    /* dark blue */
+    margin-top: 0;
+    /* no space above */
+}
+
+/* Holidays container */
+.holidays {
+    display: flex;
+    /* row layout */
+    flex-wrap: wrap;
+    /* wrap if needed */
+    gap: 20px;
+    /* space between */
+    justify-content: center;
+    /* center cards */
+}
+
+/* Individual holiday card */
+.holiday-card {
+    background-color: white;
+    /* white background */
+    border: 1px solid #ddd;
+    /* grey border */
+    width: 280px;
+    /* card width */
+    padding: 15px;
+    /* space inside */
+    text-align: center;
+    /* center content */
+}
+
+/* Holiday card image */
+.holiday-card img {
+    width: 100%;
+    /* full width of card */
+    height: 180px;
+    /* fixed height */
+    object-fit: cover;
+    /* crop to fit */
+}
+
+/* Holiday card heading */
+.holiday-card h3 {
+    color: #1565C0;
+    /* dark blue */
+    margin: 10px 0;
+    /* space above and below */
+}
+
+/* Holiday card link */
+.holiday-card a {
+    display: inline-block;
+    /* makes it a button shape */
+    background-color: #ff9800;
+    /* orange */
+    color: white;
+    /* white text */
+    padding: 8px 15px;
+    /* space inside */
+    text-decoration: none;
+    /* no underline */
+    margin-top: 10px;
+    /* space above */
+}
+
+/* Holiday card link hover */
+.holiday-card a:hover {
+    background-color: #f57c00;
+    /* darker orange */
+}
+
+/* Video container */
+.video-box {
+    text-align: center;
+    /* center video */
+    margin: 20px 0;
+    /* space above and below */
+}
+
+/* Reviews container */
+.reviews {
+    display: flex;
+    /* row layout */
+    flex-wrap: wrap;
+    /* wrap if needed */
+    gap: 20px;
+    /* space between */
+}
+
+/* Individual review */
+.review {
+    background-color: #fff9c4;
+    /* light yellow */
+    padding: 15px;
+    /* space inside */
+    border-left: 4px solid #fbc02d;
+    /* yellow left border */
+    flex: 1;
+    /* equal width */
+    min-width: 250px;
+    /* minimum width */
+}
+
+/* Big price text */
+.big-price {
+    font-size: 24px;
+    /* big text */
+    color: #e65100;
+    /* orange color */
+    font-weight: bold;
+    /* bold text */
+}
+
+/* List styling */
+.list {
+    margin-left: 20px;
+    /* indent list */
+    margin-bottom: 20px;
+    /* space below */
+}
+
+/* List items */
+.list li {
+    margin-bottom: 8px;
+    /* space between items */
+    list-style-type: disc;
+    /* bullet points */
+}
+
+/* Photos container */
+.photos {
+    display: flex;
+    /* row layout */
+    flex-wrap: wrap;
+    /* wrap */
+    gap: 10px;
+    /* space between */
+}
+
+/* Photo images */
+.photos img {
+    width: 200px;
+    /* image width */
+    height: 150px;
+    /* image height */
+    object-fit: cover;
+    /* crop to fit */
+    border: 2px solid #ddd;
+    /* grey border */
+}
+
+/* Itinerary section */
+.itinerary {
+    background-color: #e8f5e9;
+    /* light green */
+    padding: 15px;
+    /* space inside */
+    border: 1px solid #a5d6a7;
+    /* green border */
+}
+
+/* Itinerary paragraphs */
+.itinerary p {
+    margin-bottom: 10px;
+    /* space below each day */
+}
+
+/* Booking box */
+.booking-box {
+    background-color: #fff3e0;
+    /* light orange */
+    padding: 20px;
+    /* space inside */
+    border: 2px solid #ffb74d;
+    /* orange border */
+    max-width: 400px;
+    /* not too wide */
+}
+
+/* Form labels */
+label {
+    font-weight: bold;
+    /* bold text */
+}
+
+/* Form inputs */
+input, select, textarea {
+    padding: 8px;
+    /* space inside */
+    margin-top: 5px;
+    /* space above */
+    border: 1px solid #ccc;
+    /* grey border */
+    font-size: 16px;
+    /* text size */
+}
+
+/* Buttons */
+button {
+    background-color: #4caf50;
+    /* green */
+    color: white;
+    /* white text */
+    padding: 10px 20px;
+    /* space inside */
+    border: none;
+    /* no border */
+    font-size: 16px;
+    /* text size */
+    cursor: pointer;
+    /* hand cursor */
+}
+
+/* Button hover */
+button:hover {
+    background-color: #388e3c;
+    /* darker green */
+}
+
+/* Total price display */
+#total-price {
+    font-size: 20px;
+    /* bigger text */
+    font-weight: bold;
+    /* bold */
+    color: #e65100;
+    /* orange */
+}
+
+/* Contact page container */
+.contact-container {
+    display: flex;
+    /* row layout */
+    flex-wrap: wrap;
+    /* wrap on small screens */
+    gap: 30px;
+    /* space between */
+}
+
+/* Contact form section */
+.contact-form-section {
+    flex: 1;
+    /* takes available space */
+    min-width: 300px;
+    /* minimum width */
+}
+
+/* Contact info section */
+.contact-info {
+    flex: 1;
+    /* takes available space */
+    min-width: 250px;
+    /* minimum width */
+    background-color: #e3f2fd;
+    /* light blue */
+    padding: 20px;
+    /* space inside */
+}
+
+/* Map container */
+.map-box {
+    text-align: center;
+    /* center map */
+    margin: 20px 0;
+    /* space above and below */
+}
+
+/* Map iframe */
+.map-box iframe {
+    max-width: 100%;
+    /* responsive */
+    border: 2px solid #ddd;
+    /* grey border */
+}
+
+/* FAQ container */
+.faq {
+    margin-top: 20px;
+    /* space above */
+}
+
+/* FAQ item */
+.faq-item {
+    margin-bottom: 15px;
+    /* space below each */
+    border: 1px solid #ddd;
+    /* grey border */
+}
+
+/* FAQ question */
+.question {
+    background-color: #2196F3;
+    /* blue */
+    color: white;
+    /* white text */
+    padding: 10px;
+    /* space inside */
+    cursor: pointer;
+    /* hand cursor */
+    margin: 0;
+    /* no margin */
+}
+
+/* FAQ question hover */
+.question:hover {
+    background-color: #1976D2;
+    /* darker blue */
+}
+
+/* FAQ answer */
+.answer {
+    display: none;
+    /* hidden by default */
+    padding: 10px;
+    /* space inside */
+    background-color: #f5f5f5;
+    /* grey background */
+    margin: 0;
+    /* no margin */
+}
+
+/* Form success message */
+#form-message {
+    color: green;
+    /* green text */
+    font-weight: bold;
+    /* bold */
+    margin-top: 10px;
+    /* space above */
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    /* dark grey */
+    color: white;
+    /* white text */
+    text-align: center;
+    /* centered */
+    padding: 20px;
+    /* space inside */
+    margin-top: 20px;
+    /* space above */
+}
+
+/* Footer paragraphs */
+footer p {
+    margin: 5px 0;
+    /* small space between */
+}
+
+/* Mobile styles - for screens smaller than 600px */
+@media (max-width: 600px) {
+    /* Makes navigation stack vertically on mobile */
+    nav li {
+        display: block;
+        /* stack items */
+        margin: 5px 0;
+        /* space between */
+    }
+    
+    /* Makes features stack on mobile */
+    .features {
+        flex-direction: column;
+        /* vertical layout */
+        align-items: center;
+        /* center items */
+    }
+    
+    /* Makes holiday cards full width on mobile */
+    .holiday-card {
+        width: 100%;
+        /* full width */
+    }
+    
+    /* Makes photos smaller on mobile */
+    .photos img {
+        width: 150px;
+        /* smaller */
+        height: 100px;
+        /* smaller */
+    }
+    
+    /* Stacks contact sections on mobile */
+    .contact-container {
+        flex-direction: column;
+        /* vertical */
+    }
+}

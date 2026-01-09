@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<!-- HTML5 document declaration -->
+
+<html lang="en">
+<!-- Start of html, english language -->
+
+<head>
+    <!-- Head section with page info -->
+
+    <meta charset="UTF-8">
+    <!-- Character set -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Mobile friendly -->
+
+    <title>Holidae - Contact Us</title>
+    <!-- Page title -->
+
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link to styles -->
+
+</head>
+<!-- End head -->
+
+<body>
+    <!-- Body starts -->
+
+    <!-- Navigation menu -->
+    <nav>
+        <!-- Nav container -->
+
+        <h1>Holidae</h1>
+        <!-- Company name -->
+
+        <ul>
+            <!-- Links list -->
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="destinations.html">Destinations</a>
+            </li>
+
+            <li>
+                <a href="bali.html">Bali Package</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+
+        </ul>
+
+    </nav>
+    <!-- End nav -->
+
+    <!-- Page header -->
+    <div class="page-header">
+        <!-- Header container -->
+
+        <h2>Contact Us</h2>
+        <!-- Title -->
+
+        <p>Get in touch with us</p>
+        <!-- Subtitle -->
+
+    </div>
+    <!-- End header -->
+
+    <!-- Main content -->
+    <main>
+        <!-- Main section -->
+
+        <div class="contact-container">
+            <!-- Container for contact stuff -->
+
+            <!-- Contact form section -->
+            <div class="contact-form-section">
+                <!-- Form section -->
+
+                <h3>Send us a message</h3>
+                <!-- Form title -->
+
+                <form id="contact-form">
+                    <!-- Form element -->
+
+                    <label for="name">Your Name:</label>
+                    <!-- Name label -->
+
+                    <input type="text" id="name" name="name" required>
+                    <!-- Name input box, required means must fill in -->
+
+                    <br><br>
+                    <!-- Line breaks -->
+
+                    <label for="email">Your Email:</label>
+                    <!-- Email label -->
+
+                    <input type="email" id="email" name="email" required>
+                    <!-- Email input -->
+
+                    <br><br>
+                    <!-- Spacing -->
+
+                    <label for="subject">Subject:</label>
+                    <!-- Subject label -->
+
+                    <select id="subject" name="subject">
+                        <!-- Dropdown menu -->
+
+                        <option value="booking">New Booking</option>
+                        <!-- Option 1 -->
+
+                        <option value="question">Question</option>
+                        <!-- Option 2 -->
+
+                        <option value="complaint">Complaint</option>
+                        <!-- Option 3 -->
+
+                        <option value="other">Other</option>
+                        <!-- Option 4 -->
+
+                    </select>
+                    <!-- End dropdown -->
+
+                    <br><br>
+                    <!-- Spacing -->
+
+                    <label for="message">Your Message:</label>
+                    <!-- Message label -->
+
+                    <br>
+                    <!-- Line break -->
+
+                    <textarea id="message" name="message" rows="5" cols="40" required></textarea>
+                    <!-- Text area for long message -->
+
+                    <br><br>
+                    <!-- Spacing -->
+
+                    <button type="submit">Send Message</button>
+                    <!-- Submit button -->
+
+                </form>
+                <!-- End form -->
+
+                <p id="form-message"></p>
+                <!-- This will show success message from javascript -->
+
+            </div>
+            <!-- End form section -->
+
+            <!-- Contact info section -->
+            <div class="contact-info">
+                <!-- Info container -->
+
+                <h3>Our Contact Details</h3>
+                <!-- Title -->
+
+                <p><b>Email:</b> info@holidae.com</p>
+                <!-- Email address -->
+
+                <p><b>Phone:</b> 0123 456 7890</p>
+                <!-- Phone number -->
+
+                <p><b>Address:</b></p>
+                <!-- Address label -->
+
+                <p>Holidae Travel Company</p>
+                <!-- Company name -->
+
+                <p>123 High Street</p>
+                <!-- Street -->
+
+                <p>London</p>
+                <!-- City -->
+
+                <p>W1A 1AA</p>
+                <!-- Postcode -->
+
+                <h3>Opening Hours</h3>
+                <!-- Hours title -->
+
+                <p>Monday to Friday: 9am - 6pm</p>
+                <!-- Weekday hours -->
+
+                <p>Saturday: 10am - 4pm</p>
+                <!-- Saturday hours -->
+
+                <p>Sunday: Closed</p>
+                <!-- Sunday -->
+
+            </div>
+            <!-- End info section -->
+
+        </div>
+        <!-- End contact container -->
+
+        <h3>Find Us</h3>
+        <!-- Map heading -->
+
+        <div class="map-box">
+            <!-- Map container -->
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.7642069677793!2d-0.14378908423089!3d51.51400197963597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ad554dfffff%3A0x1e9f24a89fe96ebc!2sOxford%20Circus!5e0!3m2!1sen!2suk!4v1234567890" width="600" height="300"></iframe>
+            <!-- Google maps embed showing London -->
+
+        </div>
+        <!-- End map -->
+
+        <h3>Frequently Asked Questions</h3>
+        <!-- FAQ heading -->
+
+        <div class="faq">
+            <!-- FAQ container -->
+
+            <div class="faq-item">
+                <!-- Question 1 -->
+
+                <p class="question" onclick="toggleAnswer(1)">How do I book a holiday?</p>
+                <!-- Question text, onclick runs javascript -->
+
+                <p class="answer" id="answer1">You can book on our website or call us. We will help you pick the best holiday for you.</p>
+                <!-- Answer text -->
+
+            </div>
+            <!-- End question 1 -->
+
+            <div class="faq-item">
+                <!-- Question 2 -->
+
+                <p class="question" onclick="toggleAnswer(2)">Can I pay in parts?</p>
+                <!-- Question -->
+
+                <p class="answer" id="answer2">Yes! You can pay a deposit first and then pay the rest later before you go.</p>
+                <!-- Answer -->
+
+            </div>
+            <!-- End question 2 -->
+
+            <div class="faq-item">
+                <!-- Question 3 -->
+
+                <p class="question" onclick="toggleAnswer(3)">What if I need to cancel?</p>
+                <!-- Question -->
+
+                <p class="answer" id="answer3">If you cancel more than 30 days before you get full money back. Less than 30 days you get half back.</p>
+                <!-- Answer -->
+
+            </div>
+            <!-- End question 3 -->
+
+            <div class="faq-item">
+                <!-- Question 4 -->
+
+                <p class="question" onclick="toggleAnswer(4)">Is travel insurance included?</p>
+                <!-- Question -->
+
+                <p class="answer" id="answer4">No, but we can help you get insurance. We recommend you always get travel insurance.</p>
+                <!-- Answer -->
+
+            </div>
+            <!-- End question 4 -->
+
+        </div>
+        <!-- End FAQ -->
+
+    </main>
+    <!-- End main -->
+
+    <!-- Footer -->
+    <footer>
+        <!-- Footer section -->
+
+        <p>Contact us: info@holidae.com</p>
+        <!-- Email -->
+
+        <p>Phone: 0123 456 7890</p>
+        <!-- Phone -->
+
+        <p>© 2024 Holidae</p>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- End footer -->
+
+    <script src="script.js"></script>
+    <!-- JavaScript file -->
+
+</body>
+<!-- End body -->
+
+</html>
+<!-- End document -->
